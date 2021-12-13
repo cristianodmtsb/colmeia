@@ -2,10 +2,9 @@
   "name": "@cristianodmtsb/colmeia",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "repository": "git@github.com:cristianodmtsb/colmeia.git",
-  "homepage": "https://colmeia.now.sh/",
-  "author": "cristianodmtsb Core Team <dev@cristianodmtsb.com.br>",
-  "license": "MIT",
+  "repository": "https://github.com/cristianodmtsb/colmeia.git",
+  "author": "Cristianodmtsb",
+  "license": "ISC",
   "scripts": {
     "storybook": "start-storybook -s ./public",
     "storybook:build": "build-storybook -c .storybook -o storybook-dist -s ./public",
