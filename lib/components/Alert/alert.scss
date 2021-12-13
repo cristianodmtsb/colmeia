@@ -1,0 +1,30 @@
+.base {
+  align-items: center;
+  border: var(--cma-thin-outline);
+  border-radius: var(--cma-none-radius);
+  display: inline-flex;
+  padding: var(--cma-x-small-inline);
+}
+
+.baseText {
+  padding-left: var(--cma-small-inset);
+  font-weight: var(--cma-bold-weight);
+}
+
+.danger {
+  border-color: var(--cma-danger-support);
+  color: var(--cma-danger-support);
+  fill: var(--cma-danger-support);
+}
+
+.success {
+  border-color: var(--cma-success-support);
+  color: var(--cma-success-support);
+  fill: var(--cma-success-support);
+}
+
+.warning {
+  border-color: var(--cma-warning-support);
+  color: var(--cma-warning-support);
+  fill: var(--cma-warning-support);
+}

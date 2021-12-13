@@ -1,0 +1,49 @@
+/**
+* @tokens Borders
+* @presenter Border
+*/
+:root {
+  --cma-none-outline: 0;
+  --cma-thin-outline: 1px solid;
+  --cma-outline-color: #5e9ed6;
+}
+
+/**
+* @tokens Border Radius
+* @presenter BorderRadius
+*/
+:root {
+  --cma-none-radius: 0;
+  --cma-xs-radius: 5px;
+  --cma-xxs-radius: 10px;
+}
+
+/**
+* @tokens Opacities
+* @presenter Opacity
+*/
+:root {
+  --cma-semi-opaque-opacity: 0.6;
+  --cma-medium-opacity: 0.2;
+  --cma-semi-transparent-opacity: 0.1;
+  --cma-disabled-opacity: 0.4;
+}
+
+/**
+* @tokens Shadows
+* @presenter Shadow
+*/
+:root {
+  --cma-rule-01-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  --cma-rule-02-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+/**
+* @tokens Z-Index
+* @presenter Z-Index
+*/
+:root {
+  --cma-primary-z-index: 1;
+  --cma-secondary-z-index: 2; /** position absolute **/
+  --cma-tertiary-z-index: 3; /** modal **/
+}

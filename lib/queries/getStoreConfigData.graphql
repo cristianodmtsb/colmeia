@@ -1,0 +1,10 @@
+query storeConfigData {
+  storeConfig {
+    id
+    header_logo_src
+    logo_width
+    logo_height
+    logo_alt
+    secure_base_media_url
+  }
+}

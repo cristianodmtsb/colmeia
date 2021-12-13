@@ -1,0 +1,40 @@
+.input {
+  display: none;
+  width: var(--cma-medium-icon);
+
+  & + .label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      fill-opacity: 0;
+      margin: 0;
+    }
+
+    .text {
+      margin-left: 1rem;
+    }
+  }
+
+  &:checked + label {
+    .icon {
+      fill-opacity: 100%;
+    }
+
+    .box {
+      background-color: var(--cma-tertiary-main);
+    }
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--cma-medium-icon);
+  height: var(--cma-medium-icon);
+  border: var(--cma-thin-outline);
+  border-color: var(--cma-tertiary-main);
+  transition: 0.3s;
+}

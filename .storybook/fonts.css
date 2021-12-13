@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
+
+@font-face {
+  font-family: 'Knockout HTF30';
+  src: url('./assets/Knockout-HTF30-JuniorWelterwt.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Knockout HTF50';
+  src: url('./assets/Knockout-HTF50-Welterweight.otf') format('opentype');
+  font-display: swap;
+}

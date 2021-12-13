@@ -1,0 +1,9 @@
+@import './design-tokens/colors.css';
+@import './design-tokens/iconography.css';
+@import './design-tokens/spacing.css';
+@import './design-tokens/styles.css';
+@import './design-tokens/typography.css';
+
+html {
+  font-size: 100%;
+}

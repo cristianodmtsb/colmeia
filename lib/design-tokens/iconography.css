@@ -1,0 +1,12 @@
+/**
+* @tokens Icon Sizes
+*/
+:root {
+  /* ICON */
+  --cma-big-icon: 80px;
+  --cma-xx-medium-icon: 45px;
+  --cma-x-medium-icon: 30px;
+  --cma-medium-icon: 20px;
+  --cma-small-icon: 15px;
+  --cma-x-small-icon: 10px;
+}

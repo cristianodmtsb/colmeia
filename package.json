@@ -1,0 +1,94 @@
+{
+  "name": "@webjump/colmeia",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": "git@bitbucket.org:webjump/colmeia.git",
+  "homepage": "https://colmeia.now.sh/",
+  "author": "Webjump Core Team <dev@webjump.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -s ./public",
+    "storybook:build": "build-storybook -c .storybook -o storybook-dist -s ./public",
+    "test": "jest"
+  },
+  "files": [
+    "lib/*",
+    "lib/**/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "devDependencies": {
+    "@apollo/react-hooks": "^3.1.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@magento/peregrine": "~6.0.0",
+    "@magento/pwa-buildpack": "~5.1.1",
+    "@magento/venia-ui": "~3.0.0",
+    "@storybook/addon-backgrounds": "^5.3.14",
+    "@storybook/addon-docs": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
+    "@storybook/addon-storysource": "^5.3.14",
+    "@storybook/addon-viewport": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^10.0.2",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-cache-persist": "^0.1.1",
+    "apollo-client": "^2.6.8",
+    "apollo-link-http": "^1.5.16",
+    "apollo-storybook-react": "^0.2.4",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.1.0",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "husky": "^4.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "jest-canvas-mock": "^2.2.0",
+    "jest-fetch-mock": "^3.0.3",
+    "jest-transform-graphql": "^2.1.0",
+    "mock-apollo-client": "^0.3.0",
+    "node-sass": "^4.13.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.4",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-tabs": "^3.1.0",
+    "react-test-renderer": "^16.13.1",
+    "redux": "^4.0.5",
+    "sass-loader": "^8.0.2",
+    "storybook-design-token": "^0.5.1",
+    "svg-spritemap-webpack-plugin": "^3.5.5",
+    "workbox-webpack-plugin": "^5.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "cep-promise": "^3.0.9",
+    "i18next": "^19.4.2",
+    "react-i18next": "^11.3.4",
+    "react-input-mask": "^2.0.4",
+    "react-lottie": "^1.2.3"
+  }
+}

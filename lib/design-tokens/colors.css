@@ -1,0 +1,35 @@
+/**
+  * @tokens Colors
+  * @presenter Color
+  */
+:root {
+  /* Base Palette */
+  --cma-white: #ffffff;
+  --cma-black: #000000;
+
+  /* Main Palette */
+  --cma-primary-main: #a28e62;
+  --cma-secondary-main: #cc0010;
+  --cma-tertiary-main: #004994;
+  --cma-quaternary-main: #f8f4e7;
+
+  /* Neutral Palette */
+  --cma-black-neutral: #000000;
+  --cma-dark-neutral: #555555;
+  --cma-medium-neutral: #959595;
+  --cma-regular-neutral: #ededed;
+  --cma-light-neutral: #f8f8f8;
+  --cma-white-neutral: #ffffff;
+
+  /* Support Palette */
+  --cma-success-support: #008300;
+  --cma-warning-support: #f5c872;
+  --cma-danger-support: #ff192d;
+
+  /* Hover Palette */
+  --cma-primary-main-hover: #706243;
+  --cma-tertiary-main-hover: #003469;
+  --cma-neutral-dark-main-hover: #9a9a9a;
+  --cma-success-support-hover: #005f00;
+  --cma-regular-neutral-hover: #dbdbdb;
+}

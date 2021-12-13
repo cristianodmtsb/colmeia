@@ -1,0 +1,69 @@
+/**
+* @tokens Font Families
+* @presenter FontFamily
+*/
+:root {
+  --cma-primary-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  --cma-secondary-family: 'Knockout HTF30';
+  --cma-tertiary-family: 'Knockout HTF50';
+}
+
+/**
+* @tokens Font Sizes
+* @presenter FontSize
+*/
+:root {
+  --cma-xxx-big-size: 5rem;
+  --cma-xx-big-size: 3.75rem;
+  --cma-x-big-size: 2.5rem;
+  --cma-big-size: 2rem;
+  --cma-xx-medium-size: 1.75rem;
+  --cma-x-medium-size: 1.375rem;
+  --cma-medium-size: 1.25rem;
+  --cma-small-size: 1.125rem;
+  --cma-x-small-size: 1rem;
+  --cma-xx-small-size: 0.875rem;
+}
+
+/**
+* @tokens Font Weights
+* @presenter FontWeight
+*/
+:root {
+  --cma-light-weight: 300;
+  --cma-regular-weight: 400;
+  --cma-medium-weight: 400;
+  --cma-semi-bold-weight: 600;
+  --cma-bold-weight: 700;
+}
+
+/**
+* @tokens Line Heights
+* @presenter LineHeight
+*/
+:root {
+  --cma-rule-01-height: 1;
+  --cma-rule-02-height: 1.3;
+  --cma-rule-03-height: 1.5;
+}
+
+/**
+* @tokens Text Decorations
+*
+*/
+:root {
+  --cma-uppercase-decoration: uppercase;
+  --cma-underline-decoration: underline;
+  --cma-strikethrough-decoration: line-through;
+}
+
+/**
+* @tokens Text Alignments
+*
+*/
+:root {
+  --cma-text-left-align: left;
+  --cma-text-center-align: center;
+  --cma-text-right-align: right;
+}

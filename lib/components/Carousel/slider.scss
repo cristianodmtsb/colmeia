@@ -1,0 +1,204 @@
+[dir='rtl'] .root :global .slick-slide {
+  float: right;
+}
+
+.root {
+  display: block;
+  position: relative;
+  touch-action: pan-y;
+  user-select: none;
+
+  :global {
+    .slick-slider {
+      min-height: inherit;
+
+      .slick-track,
+      .slick-list {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .slick-list {
+      display: block;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      min-height: inherit;
+      border-radius: 10px;
+
+      &:focus {
+        outline: var(--cma-outline-none);
+      }
+
+      &.dragging {
+        cursor: pointer;
+      }
+    }
+
+    .slick-track {
+      display: block;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: 0;
+      min-height: inherit;
+
+      &:before,
+      &:after {
+        content: '';
+        display: table;
+      }
+
+      &:after {
+        clear: both;
+      }
+
+      .slick-slide > div {
+        min-height: inherit;
+      }
+    }
+
+    .slick-loading {
+      .slick-track,
+      .slick-slide {
+        visibility: hidden;
+      }
+    }
+
+    .slick-initialized .slick-slide {
+      display: block;
+    }
+
+    .slick-slide {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: inherit;
+
+      img {
+        display: block;
+      }
+
+      .slick-loading img {
+        display: none;
+      }
+
+      .dragging img {
+        pointer-events: none;
+      }
+    }
+
+    .slick-vertical .slick-loading {
+      border: var(--cma-thin-outline) transparent;
+      display: block;
+      height: auto;
+    }
+
+    .slick-arrow.slick-hidden {
+      display: none;
+    }
+
+    .slick-prev,
+    .slick-next {
+      background: rgba(252, 252, 252, 0.75);
+      border: none;
+      border-radius: 50px;
+      color: transparent;
+      cursor: pointer;
+      display: block;
+      font-size: 0;
+      height: 40px;
+      line-height: 0;
+      outline: var(--cma-none-outline);
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 40px;
+      opacity: 0;
+      z-index: 3;
+      transition: 0.3s;
+    }
+
+    .slick-prev {
+      left: 1.6rem;
+
+      &:before {
+        content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' width='32px' height='32px' viewBox='0 0 24 24' fill='none' stroke='black' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><line x1='19' y1='12' x2='5' y2='12' /><polyline points='12 19 5 12 12 5' /></svg>");
+      }
+    }
+
+    .slick-next {
+      right: 1.6rem;
+
+      &:before {
+        content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' width='32px' height='32px' viewBox='0 0 24 24' fill='none' stroke='black' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'><line x1='5' y1='12' x2='19' y2='12' /><polyline points='12 5 19 12 12 19' /></svg>");
+      }
+    }
+
+    .slick-current {
+      z-index: 1;
+    }
+
+    .slick-dots {
+      position: absolute;
+      bottom: 8px;
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: var(--cma-small-stack) 0;
+      text-align: center;
+      width: 100%;
+
+      li {
+        cursor: pointer;
+        display: inline-block;
+        height: 15px;
+        margin: 0 3px;
+        padding: 0;
+        position: relative;
+        vertical-align: middle;
+        width: 15px;
+
+        button {
+          outline: var(--cma-outline-none);
+          background: #fff;
+          filter: opacity(0.5);
+          border-radius: 10px;
+          box-shadow: none;
+          cursor: pointer;
+          display: block;
+          height: 10px;
+          padding: 0;
+          text-indent: -99999px;
+          transition: 0.5s;
+          width: 10px;
+
+          &:hover {
+            filter: opacity(0.8);
+          }
+
+          &:active,
+          &:focus,
+          &:not(.primary) {
+            box-shadow: none;
+          }
+        }
+
+        &.slick-active button {
+          filter: opacity(1);
+          transform: scale(1.5, 1.5);
+        }
+      }
+    }
+  }
+
+  &:hover :global {
+    .slick-prev,
+    .slick-next {
+      opacity: 1;
+    }
+  }
+}

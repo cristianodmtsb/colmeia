@@ -1,0 +1,25 @@
+.container {
+  margin: var(--cma-x-small-inline);
+}
+
+.iconContainer {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  padding-right: var(--cma-small-stack);
+}
+
+.icon svg {
+  fill: var(--cma-regular-neutral);
+}
+
+.icon:hover ~ .icon svg,
+.icon:hover svg,
+.active svg {
+  fill: var(--cma-warning-support);
+}
+
+.review {
+  font-family: var(--cma-primary-family);
+  font-size: var(--cma-x-small-size);
+  font-weight: var(--cma-regular-weight);
+}

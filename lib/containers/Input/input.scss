@@ -1,0 +1,124 @@
+.fieldsetContainer {
+  position: relative;
+  display: inline-block;
+
+  .label {
+    display: block;
+    text-align: var(--cma-text-left-align);
+    font-family: var(--cma-secondary-family);
+    font-size: var(--cma-x-small-size);
+    text-transform: var(--cma-uppercase-decoration);
+    line-height: calc(var(--cma-x-small-size) * var(--cma-rule-01-height));
+
+    + .inputContainer {
+      margin-top: var(--cma-xx-small-stack);
+    }
+  }
+
+  .labelActive {
+    border-left: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .placeholderLabel {
+    top: 0;
+    left: 0;
+    z-index: var(--cma-primary-z-index);
+    cursor: text;
+    position: absolute;
+    text-transform: none;
+    transition: top 0.3s, left 0.3s;
+    font-size: var(--cma-xx-small-size);
+
+    &:not(.labelActive) {
+      top: 20px;
+      left: 10px;
+    }
+
+    + .inputContainer {
+      border: 0;
+      border-bottom: var(--cma-thin-outline);
+
+      .input {
+        padding-left: 0;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 2px 0 0 var(--cma-outline-color);
+        }
+      }
+    }
+  }
+
+  &.success {
+    .inputContainer {
+      border-color: var(--cma-success-support);
+    }
+  }
+
+  &.failure {
+    .inputContainer {
+      border-color: var(--cma-danger-support);
+    }
+  }
+
+  &.neutral {
+    .inputContainer {
+      border-color: var(--cma-tertiary-main);
+    }
+  }
+
+  .inputContainer {
+    background-color: var(--cma-white-neutral);
+    border: var(--cma-thin-outline);
+    border-radius: var(--cma-none-radius);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .input {
+      background-color: transparent;
+      inset: var(--cma-medium-inset);
+      border: var(--cma-none-outline);
+      padding: var(--cma-x-small-stack);
+      padding-right: var(--cma-medium-stack);
+
+      &:invalid {
+        box-shadow: none;
+      }
+
+      &::placeholder {
+        color: var(--cma-medium-neutral);
+      }
+    }
+
+    .clear {
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      text-decoration: var(--cma-underline-decoration);
+      color: var(--cma-medium-neutral);
+
+      &:hover {
+        color: var(--cma-dark-neutral);
+      }
+
+      svg {
+        fill: currentColor;
+      }
+    }
+
+    svg {
+      padding-right: var(--cma-x-small-stack);
+      right: 0;
+    }
+  }
+
+  .message {
+    font-size: var(--cma-xx-small-size);
+    color: var(--cma-danger-support);
+    font-weight: var(--cma-semi-bold-weight);
+    margin-top: var(--cma-xx-small-stack);
+  }
+}

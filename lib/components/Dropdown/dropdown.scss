@@ -1,0 +1,23 @@
+.box {
+  background-color: var(--cma-regular-neutral);
+  font-weight: var(--cma-semi-bold-weight);
+  border: var(--cma-thin-outline) var(--cma-tertiary-main);
+  padding: var(--cma-small-inset);
+  position: relative;
+  cursor: pointer;
+
+  .text {
+    display: inline;
+  }
+}
+
+.icon,
+.openedIcon {
+  margin-left: var(--cma-xx-small-stack);
+  float: right;
+  transition: transform 0.5s;
+}
+
+.openedIcon {
+  transform: rotate(180deg);
+}

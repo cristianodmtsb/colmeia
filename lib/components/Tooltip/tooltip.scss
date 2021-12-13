@@ -1,0 +1,45 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  box-shadow: none;
+}
+
+.tooltipClick {
+  cursor: pointer;
+}
+
+.tooltiptext {
+  color: var(--cma-white-neutral);
+  font-family: var(--cma-primary-family);
+  font-weight: var(--cma-regular-weight);
+  line-height: calc(var(--cma-small-size) * var(--cma-rule-01-height));
+  text-align: var(--cma-text-center-align);
+  border: var(--cma-thin-outline) var(--cma-tertiary-main);
+  background-color: var(--cma-tertiary-main);
+  border-radius: var(--cma-xs-radius);
+  transform: translateY(50%);
+  position: absolute;
+  min-width: 150px;
+  z-index: 1;
+  bottom: 50%;
+  margin-left: var(--cma-xxs-radius);
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.show {
+    transition: opacity 0.3s;
+  }
+}
+
+.arrow {
+  width: 15px;
+  height: 11px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(90deg) translate(-50%, 110%);
+
+  &:hover {
+    fill: var(--cma-tertiary-main);
+  }
+}

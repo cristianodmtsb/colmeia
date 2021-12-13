@@ -1,0 +1,14 @@
+query getCustomerOrders {
+  storeConfig {
+    base_currency_code
+  }
+  customerOrders {
+    items {
+      created_at
+      grand_total
+      id
+      order_number
+      status
+    }
+  }
+}

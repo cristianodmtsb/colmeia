@@ -1,0 +1,91 @@
+.base {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: var(--cma-none-radius);
+  font-family: var(--cma-tertiary-family);
+  transition: background-color 0.2s, color 0.2s;
+
+  &:disabled {
+    opacity: var(--cma-disabled-opacity);
+  }
+}
+
+.small-button {
+  padding: var(--cma-medium-squish);
+  font-size: var(--cma-x-medium-size);
+  text-transform: var(--cma-uppercase-decoration);
+  line-height: calc(var(--cma-rule-01-height) * var(--cma-x-medium-size));
+}
+
+.primary,
+.secondary,
+.tertiary,
+.buy {
+  composes: base small-button;
+}
+
+.primary {
+  color: var(--cma-white);
+  border: var(--cma-none-outline);
+  background-color: var(--cma-tertiary-main);
+
+  &:not(:disabled):hover {
+    background-color: var(--cma-tertiary-main-hover);
+  }
+}
+
+.secondary {
+  color: var(--cma-tertiary-main);
+  border: var(--cma-thin-outline);
+  background-color: var(--cma-white);
+
+  &:not(:disabled):hover {
+    color: var(--cma-tertiary-main-hover);
+  }
+}
+
+.tertiary {
+  color: var(--cma-white);
+  border: var(--cma-none-outline);
+  background-color: var(--cma-dark-neutral);
+
+  &:not(:disabled):hover {
+    background-color: var(--cma-neutral-dark-main-hover);
+  }
+}
+
+.quaternary {
+  composes: base;
+  color: var(--cma-white);
+  padding: var(--cma-big-squish);
+  font-size: var(--cma-big-size);
+  border: var(--cma-none-outline);
+  background-color: var(--cma-tertiary-main);
+  text-transform: var(--cma-uppercase-decoration);
+  line-height: calc(var(--cma-rule-01-height) * var(--cma-big-size));
+
+  &:not(:disabled):hover {
+    background-color: var(--cma-tertiary-main-hover);
+  }
+}
+
+.buy {
+  color: var(--cma-white);
+  border: var(--cma-none-outline);
+  background-color: var(--cma-success-support);
+
+  &:not(:disabled):hover {
+    background-color: var(--cma-success-support-hover);
+  }
+}
+
+.text {
+  composes: base;
+  color: var(--cma-tertiary-main);
+  border: var(--cma-none-outline);
+  text-decoration: var(--cma-underline-decoration);
+
+  &:not(:disabled):hover {
+    color: var(--cma-tertiary-main-hover);
+  }
+}

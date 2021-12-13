@@ -1,0 +1,42 @@
+.addressListContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--cma-dark-neutral);
+  font-family: var(--cma-primary-family);
+}
+
+.addressListTitle {
+  width: 100%;
+}
+
+.addressContainer {
+  width: 300px;
+  flex-wrap: wrap;
+  display: inline-flex;
+  flex-direction: column;
+  padding: var(--cma-medium-inset);
+  transition: background-color 0.3s;
+  margin-right: var(--cma-x-small-inline);
+  margin-bottom: var(--cma-x-small-stack);
+  border: var(--cma-thin-outline) var(--cma-quaternary-main);
+
+  > * {
+    display: block;
+    margin-bottom: var(--cma-xx-small-stack);
+  }
+
+  &:hover {
+    background-color: var(--cma-light-neutral);
+  }
+}
+
+.label {
+  font-weight: var(--cma-bold-weight);
+}
+
+.fullname {
+  *:last-child {
+    margin-left: var(--cma-xx-small-inline);
+  }
+}

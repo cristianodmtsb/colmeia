@@ -1,0 +1,30 @@
+/**
+* @tokens Spacings
+* @presenter Spacing
+*/
+:root {
+  /* Stack */
+  /* For padding and margins */
+  --cma-big-stack: 5rem; /** 80px -**/
+  --cma-x-medium-stack: 3.75rem; /** 60px **/
+  --cma-medium-stack: 2.5rem; /** 40px **/
+  --cma-small-stack: 1.25rem; /** 20px **/
+  --cma-x-small-stack: 0.625rem; /** 10px **/
+  --cma-xx-small-stack: 0.3125rem; /** 5px **/
+
+  /* Inline */
+  /* For padding and margins */
+  --cma-big-inline: 5rem; /** 80px **/
+  --cma-x-medium-inline: 3.75rem; /** 60px **/
+  --cma-medium-inline: 2.5rem; /** 40px **/
+  --cma-small-inline: 1.25rem; /** 20px **/
+  --cma-x-small-inline: 0.625rem; /** 10px **/
+  --cma-xx-small-inline: 0.3125rem; /** 5px **/
+
+  /* Squish & Inset */
+  /* Only for paddings */
+  --cma-big-squish: 0.625rem 3.75rem; /** 10px 60px **/
+  --cma-medium-squish: 0.625rem 1.25rem; /** 10px 20px **/
+  --cma-medium-inset: 1.25rem; /** 20px **/
+  --cma-small-inset: 0.625rem; /** 10px  **/
+}

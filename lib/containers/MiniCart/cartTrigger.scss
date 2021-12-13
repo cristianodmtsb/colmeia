@@ -1,0 +1,34 @@
+.triggerContainer {
+  display: flex;
+}
+
+.cartIcon {
+  width: 30px;
+  height: 30px;
+  fill: var(--cma-primary-main);
+}
+
+.triggerCountContainer {
+  margin-left: var(--cma-xx-small-inline);
+}
+
+.triggerCountLabel {
+  display: block;
+  color: var(--cma-dark-neutral);
+  font-size: var(--cma-small-size);
+  font-family: var(--cma-secondary-family);
+}
+
+.triggerCount {
+  color: var(--cma-tertiary-main);
+  font-family: var(--cma-tertiary-family);
+  margin-right: var(--cma-xx-small-inline);
+  text-decoration: var(--cma-underline-decoration);
+}
+
+.triggerSeeCart {
+  text-decoration: none;
+  color: var(--cma-tertiary-main);
+  font-size: var(--cma-small-size);
+  font-family: var(--cma-secondary-family);
+}

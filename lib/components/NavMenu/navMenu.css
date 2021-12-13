@@ -1,0 +1,29 @@
+.root {
+  background: rgb(var(--venia-grey));
+  box-shadow: 0 1px rgb(var(--venia-border));
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background: rgb(var(--venia-grey));
+  border: 1px solid rgb(var(--venia-border));
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  padding: var(--cma-x-small-stack) 0;
+}
+
+.item {
+  padding: var(--cma-x-small-stack) 0;
+  text-align: center;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 400;
+}

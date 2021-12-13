@@ -1,0 +1,50 @@
+.toggle {
+  width: 100%;
+  position: relative;
+  border-radius: var(--cma-xs-radius);
+  border: 1px solid var(--cma-quaternary-main);
+
+  &:before {
+    top: 0;
+    left: 0;
+    width: 50%;
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
+    transition: left 0.3s;
+    border-radius: var(--cma-xs-radius);
+    background-color: var(--cma-primary-main);
+  }
+
+  .option {
+    width: 50%;
+    padding: var(--cma-small-inset);
+    position: relative;
+    color: var(--cma-primary-main);
+    font-size: var(--cma-xx-small-size);
+    font-weight: var(--cma-bold-weight);
+    font-family: var(--cma-primary-family);
+    text-align: var(--cma-text-center-align);
+  }
+
+  &:not(.active) {
+    .option {
+      &:first-child {
+        color: var(--cma-white-neutral);
+      }
+    }
+  }
+
+  &.active {
+    &:before {
+      left: 50%;
+    }
+
+    .option {
+      &:last-child {
+        color: var(--cma-white-neutral);
+      }
+    }
+  }
+}

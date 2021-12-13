@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+}
+
+.button {
+  margin: 0;
+
+  svg {
+    margin: 0 var(--cma-xx-small-inline);
+  }
+}
+
+.inputContainer input {
+  height: calc(var(--cma-xx-medium-icon) - 2px);
+  text-align: var(--cma-text-center-align);
+  font-family: var(--cma-primary-family);
+  font-size: var(--cma-small-size);
+  color: var(--cma-dark-neutral);
+  padding: var(--cma-small-inset);
+  width: 100%;
+}

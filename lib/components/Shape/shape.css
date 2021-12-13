@@ -1,0 +1,16 @@
+.base {
+  background: var(--cma-white-neutral);
+  border: var(--cma-none-outline);
+  border-radius: var(--cma-none-radius);
+  box-shadow: var(--cma-rule-01-shadow);
+  display: inline-flex;
+  padding: var(--cma-medium-inset);
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}

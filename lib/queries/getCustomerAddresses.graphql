@@ -1,0 +1,30 @@
+query getCustomerAddresses {
+  customer {
+    addresses {
+      city
+      company
+      country_code
+      default_billing
+      default_shipping
+      extension_attributes {
+        attribute_code
+        value
+      }
+      fax
+      firstname
+      id
+      lastname
+      middlename
+      postcode
+      prefix
+      region {
+        region
+        region_code
+      }
+      street
+      suffix
+      telephone
+      vat_id
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.big {
+  width: var(--cma-big-icon);
+  height: var(--cma-big-icon);
+}
+
+.xx-medium {
+  width: var(--cma-xx-medium-icon);
+  height: var(--cma-xx-medium-icon);
+}
+
+.x-medium {
+  width: var(--cma-x-medium-icon);
+  height: var(--cma-x-medium-icon);
+}
+
+.medium {
+  width: var(--cma-medium-icon);
+  height: var(--cma-medium-icon);
+}
+
+.small {
+  width: var(--cma-small-icon);
+  height: var(--cma-small-icon);
+}
+
+.x-small {
+  width: var(--cma-x-small-icon);
+  height: var(--cma-x-small-icon);
+}
+
+.white {
+  fill: var(--cma-white-neutral);
+}
+
+.black {
+  fill: var(--cma-black-neutral);
+}
+
+.warning {
+  fill: var(--cma-warning-support);
+}
+
+.success {
+  fill: var(--cma-success-support);
+
+  &:hover {
+    fill: var(--cma-success-support-hover);
+  }
+}
+
+.danger {
+  fill: var(--cma-danger-support);
+}
+
+.primary {
+  fill: var(--cma-primary-main);
+
+  &:hover {
+    fill: var(--cma-primary-main-hover);
+  }
+}
+
+.secondary {
+  fill: var(--cma-secondary-main);
+}
+
+.tertiary {
+  fill: var(--cma-tertiary-main);
+
+  &:hover {
+    fill: var(--cma-tertiary-main-hover);
+  }
+}

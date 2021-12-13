@@ -1,0 +1,46 @@
+.cartHeader {
+  display: flex;
+  flex-direction: column;
+  padding: var(--cma-medium-squish);
+
+  .closeIcon {
+    margin-left: auto;
+    margin-bottom: var(--cma-small-stack);
+
+    svg {
+      fill: var(--cma-tertiary-main);
+    }
+  }
+
+  .subtotalContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .itemsQty {
+      font-family: var(--cma-primary-family);
+
+      span {
+        font-weight: var(--cma-bold-weight);
+        margin-right: var(--cma-xx-small-inline);
+      }
+    }
+
+    .subtotal {
+      text-align: var(--cma-text-right-align);
+
+      .subtotalValue {
+        font-size: var(--cma-small-size);
+        font-weight: var(--cma-bold-weight);
+        margin-top: var(--cma-x-small-stack);
+      }
+    }
+  }
+
+  .placeOrderLink {
+    width: 100%;
+    display: block;
+    margin-top: var(--cma-small-stack);
+    text-align: var(--cma-text-center-align);
+  }
+}

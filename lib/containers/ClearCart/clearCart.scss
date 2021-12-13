@@ -1,0 +1,26 @@
+.clearCart {
+  display: flex;
+  align-items: center;
+  color: var(--cma-primary-main);
+  font-family: var(--cma-primary-family);
+  font-size: var(--nes-xx-small-size);
+  font-weight: var(--cma-bold-weight);
+
+  > svg {
+    width: 10px;
+    height: 11px;
+    fill: var(--cma-primary-main);
+    margin-right: var(--cma-x-small-inline);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .clearCart {
+    font-size: var(--cma-x-small-size);
+
+    > svg {
+      width: 15px;
+      height: 17px;
+    }
+  }
+}

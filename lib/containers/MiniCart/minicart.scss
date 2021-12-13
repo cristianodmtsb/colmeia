@@ -1,0 +1,33 @@
+.miniCartRoot {
+  position: relative;
+  color: var(--cma-dark-neutral);
+
+  &.active {
+    .cartContainer {
+      display: block;
+      position: absolute;
+    }
+  }
+
+  .cartContainer {
+    right: 0;
+    top: 100%;
+    padding: 0;
+    width: 100vw;
+    display: none;
+    max-width: 350px;
+  }
+}
+
+/**
+ * FOOTER
+ */
+.cartFooter {
+  padding: var(--cma-medium-inset);
+  border-top: var(--cma-thin-outline) var(--cma-medium-neutral);
+
+  .cartLink {
+    display: block;
+    text-align: var(--cma-text-center-align);
+  }
+}
