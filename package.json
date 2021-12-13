@@ -1,10 +1,10 @@
 {
-  "name": "@webjump/colmeia",
+  "name": "@cristianodmtsb/colmeia",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "repository": "git@bitbucket.org:webjump/colmeia.git",
+  "repository": "git@github.com:cristianodmtsb/colmeia.git",
   "homepage": "https://colmeia.now.sh/",
-  "author": "Webjump Core Team <dev@webjump.com.br>",
+  "author": "cristianodmtsb Core Team <dev@cristianodmtsb.com.br>",
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -s ./public",
